@@ -1,0 +1,27 @@
+package exercices_03;
+
+import java.util.Scanner;
+
+public class Exercice_5 {
+	/*
+	 * Crie um programa que leia um número do teclado até que encontre um número 
+	 * igual a zero. No final, mostre a soma dos números digitados.(DO...WHILE)
+	 */
+	public static void main(String[] args) {
+		Scanner scanf = new Scanner(System.in);
+		int numero, soma = 0;
+		
+		do {
+			System.out.print("Digite um número: ");
+			numero = scanf.nextInt();
+			
+			soma += numero;
+		} while(numero != 0);
+		
+		System.out.printf("\nA soma dos números é: %d", soma);
+
+		
+		
+		scanf.close();
+	}
+}
